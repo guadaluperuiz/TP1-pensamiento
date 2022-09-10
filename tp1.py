@@ -35,6 +35,10 @@ apuesta= input (str("Quiere apostar?:"))
 print(apuesta)
 if apuesta == 'si':
     dineroapostado= int(input('Cuanto quiere apostar?:'))
+    while dineroapostado>plata or dineroapostado<0:
+        print ("Monto invalido, vuelva a intenarlo")
+        dineroapostado= int(input('Cuanto quiere apostar?:'))
+        
 else:
     dineroapostado = 0
 
