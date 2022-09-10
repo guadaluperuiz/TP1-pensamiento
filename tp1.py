@@ -42,7 +42,7 @@ while suma_jugador <=21:
     c=sacar_carta()
     cartasjugador.append(c)
     suma_jugador= suma_jugador +  c
-    print(f'Usted saca un : {c}')
+    print(f'Usted saca un : {c}, su total es {suma_jugador}')
     print(f'Por el momento saco las cartas: {cartasjugador}')
     pregunta=input('Quiere sacar otra carta?')
     if pregunta=='si':
@@ -54,5 +54,5 @@ while suma_crupier <= 16:
     cartascrupier.append(c)
     suma_crupier= suma_crupier + c
     print(f'El crupier saca un: {c}, su total es {suma_crupier}')
-    print(f'Por elmomento saco las cartas {cartascrupier}')
+    print(f'Por el momento saco las cartas {cartascrupier}')
     print('Pide otra carta')
